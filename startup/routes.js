@@ -1,5 +1,4 @@
 const EXPRESS = require('express')
-const APP = EXPRESS()
 const GENRE = require('../routes/genre')
 const MOVIE = require('../routes/movie')
 const CUSTOMER = require('../routes/customer')
@@ -8,7 +7,7 @@ const USER = require('../routes/user')
 const AUTH = require('../routes/auth')
 const ERROR = require('../middleware/error');
 
-module.exports = function(app){
+module.exports = function(APP){
     //routing
     APP.use(EXPRESS.json())
     APP.use('/api/genre', GENRE)
@@ -18,5 +17,4 @@ module.exports = function(app){
     APP.use('/api/user', USER)
     APP.use('/api/auth', AUTH)
     APP.use(ERROR)
-
 }

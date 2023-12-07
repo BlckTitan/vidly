@@ -1,16 +1,12 @@
 const mongoose = require('mongoose');
-const EXPRESS = require('express')
-const APP = EXPRESS();
 const WINSTON = require('winston')
+require('dotenv').config()
 require('winston-mongodb')
 
 module.exports = function() {
+    const DB = process.env.db;
     //connecting to database
-    mongoose.connect('mongodb://127.0.0.1/vidly')
-    .then(() => WINSTON.info('Connected to MongoDB...'))
+    mongoose.connect(`${DB}`)
+    .then(() => WINSTON.info(`Connected to ${DB}...`))
     // .catch(err => console.error('Could not connect to MongoDB...', err));
-
-
-    const PORT = process.env.PORT || 3000;
-    APP.listen(PORT, () => WINSTON.info(`Listening on ${PORT}`))
 }
