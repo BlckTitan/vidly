@@ -4,7 +4,7 @@ const router = express.Router();
 const GENRE_MODEL = require('../model/genreModel');
 const AUTH = require('../middleware/auth')
 const ADMIN = require('../middleware/admin')
-const MONGOOSE = require('mongoose')
+const VALIDATE_OBJECT_ID = require('../middleware/validateObjectId')
 
 //get all GENRE
 router.get('/', async (req, res) => {
@@ -18,10 +18,7 @@ router.get('/', async (req, res) => {
 })
 
 //handling get requests
-router.get('/:id', async (req, res) => {
-
-    if(!MONGOOSE.Types.ObjectId.isValid(req.params.id))
-    return res.status(404).send('Invalid ID')
+router.get('/:id', VALIDATE_OBJECT_ID, async (req, res) => {
     
     const GENRE = await GENRE_MODEL.findById(req.params.id)
     .select({name: 1})
