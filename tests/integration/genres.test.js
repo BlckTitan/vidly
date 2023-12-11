@@ -29,4 +29,19 @@ describe('/api/genre', () => {
 
         });
     });
+
+    describe('GET/:id', () => {
+
+        it('should return a genre if a valid id is passed', async () => {
+
+            const genre = new GENRE_MODEL({name: 'genre1'})
+            await genre.save()
+
+            const res = await request(server).get(`/api/genre/${genre._id}`)
+
+            expect(res.status).toBe(200);
+            expect(res.body).toHaveProperty('name', genre.name)
+        })
+
+    })
 });
