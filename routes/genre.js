@@ -23,11 +23,9 @@ router.get('/:id', VALIDATE_OBJECT_ID, async (req, res) => {
     const GENRE = await GENRE_MODEL.findById(req.params.id)
     .select({name: 1})
 
-    if(!GENRE){
-        res.status(404).send('The genre with the given ID was not found...')
-    }else{
-        res.send(GENRE)
-    }
+    if(!GENRE) return res.status(404).send('The genre with the given ID was not found...')
+    
+    res.send(GENRE)
 
 })
 
