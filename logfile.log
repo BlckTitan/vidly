@@ -704,3 +704,41 @@
 {"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
 {"level":"info","message":"Listening on 3000"}
 {"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"error","message":"Operation `genres.insertOne()` buffering timed out after 10000ms Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\HP\\Documents\\Template\\vidly\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"level":"error","message":"Operation `genres.insertOne()` buffering timed out after 10000ms Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\HP\\Documents\\Template\\vidly\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"error","message":"Operation `genres.insertOne()` buffering timed out after 10000ms Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\HP\\Documents\\Template\\vidly\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"level":"error","message":"Operation `genres.insertOne()` buffering timed out after 10000ms Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\HP\\Documents\\Template\\vidly\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
+{"level":"info","message":"Listening on 3000"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/vidly_test..."}
