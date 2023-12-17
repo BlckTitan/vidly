@@ -86,13 +86,21 @@ const USER_MODEL = require('../../model/userModel')
         expect(RESULT.status).toBe(200)
     })
 
-    it('should return 400 if customerId is not provided', async () => {
+    it('should return 200 if we have a valid request', async () => {
+
+        const RESULT = await execute()  
+        expect(RESULT.status).toBe(200)
+    })
+    
+
+    it('should set the returnDate if input is valid', async () => {
         
-        customerId = '';
+        await execute()
 
-        const RESULT = await execute()
-
-        expect(RESULT.status).toBe(400)
+        const rentalInDb = await RENTAL_MODEL.findById(rental._id)
+        const diff = new Date() - rentalInDb.dateReturned;
+        
+        expect(diff).toBeLessThan(10 * 1000)
     })
 
     it('should return 400 if movieId is not provided', async () => {

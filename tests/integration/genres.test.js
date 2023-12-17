@@ -11,8 +11,8 @@ describe('/api/genre', () => {
         
     })
 
-    /*const execute = async () => {
-        return await request(server)
+    /*const execute = () => {
+        return request(server)
         .post('/api/genre')
         .set('x-auth-token', token)
         .send({name})
